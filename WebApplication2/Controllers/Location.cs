@@ -12,6 +12,7 @@ namespace WebApplication2.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            //hi is try for git
             return new string[] { "value1", "value2" };
         }
 
