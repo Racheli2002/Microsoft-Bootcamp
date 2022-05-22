@@ -12,7 +12,6 @@ namespace Entities
         public String FirstName { get; set; }
         public String LastName { get; set; }
 
-        public List<Location> Locations { get; set; }
 
     }
 }
