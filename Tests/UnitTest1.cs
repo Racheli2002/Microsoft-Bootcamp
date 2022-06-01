@@ -6,7 +6,8 @@ using Microsoft.VisualStudio.TestPlatform.TestHost;
 
 namespace Tests
 {
-    public class LocationTest: IClassFixture<WebApplicationFactory<Program>>{ 
+    public class LocationTest { 
+        [Fact]
     public async Task HelloWorldTest()
     {
         var application = new WebApplicationFactory<Program>()
@@ -22,7 +23,7 @@ namespace Tests
             var response = await client.GetAsync("/api/Location/u");
 
             // Assert
-            response.Equals(false);
+            response.EnsureSuccessStatusCode();
         }
 }
 }

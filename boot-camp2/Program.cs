@@ -1,14 +1,19 @@
+using boot_camp2;
 using Dal;
 using Serilog;
 using Services;
 
 var builder = WebApplication.CreateBuilder(args);
-var logger = new LoggerConfiguration()
-  .ReadFrom.Configuration(builder.Configuration)
-  .Enrich.FromLogContext()
-  .CreateLogger();
-builder.Logging.ClearProviders();
-builder.Logging.AddSerilog(logger);
+//var logger = new LoggerConfiguration()
+//  .ReadFrom.Configuration(builder.Configuration)
+//  .Enrich.FromLogContext()
+//  .CreateLogger();
+
+builder.Host.UseSerilog((hostContext, services, configuration) => {
+configuration.WriteTo.File("C:\\Users\\WIN10\\source\\repos\\r.txt");
+});
+//builder.Logging.ClearProviders();
+//builder.Logging.AddSerilog(logger);
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<ILocationService, LocationService>();
 builder.Services.AddScoped<ILocationData, LocationData>();
@@ -24,7 +29,7 @@ builder.Services.AddSwaggerGen();
 
 
 var app = builder.Build();
-
+app.UseErrorMiddleware();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -40,3 +45,4 @@ app.MapControllers();
 app.MapRazorPages();
 
 app.Run();
+public partial class Program { }

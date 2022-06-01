@@ -19,7 +19,7 @@ namespace boot_camp2.Controllers
             _logger = logger;
         }
         // GET: api/<PatientController>
-        [HttpGet("all")]
+        [HttpGet("all")]    
         public async Task<List<Location>> Get()
         {
             try
@@ -34,14 +34,14 @@ namespace boot_camp2.Controllers
         }
 
 
-        [HttpGet ]
+        [HttpGet ("city")]
         public async Task<List<Location>> GetByCity([FromQuery] string city)
         {
             
             return await _locationService.getLocationByCity(city);
         }
         // GET api/<PatientController>/5
-        [HttpGet("{patientid}")]
+        [HttpGet("patientid/{patientid}")]
         public async Task<List<Location>> Get(string patientid)
         {
             return await _locationService.getLocationsBYPatientaId(patientid);
