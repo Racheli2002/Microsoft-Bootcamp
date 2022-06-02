@@ -1,0 +1,52 @@
+[2022-06-02 21:52:18.338 +03:00  INF]  User profile is available. Using 'C:\Users\WIN10\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-06-02 21:52:18.651 +03:00  INF]  Now listening on: https://localhost:7099
+[2022-06-02 21:52:18.652 +03:00  INF]  Now listening on: http://localhost:5099
+[2022-06-02 21:52:18.654 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-06-02 21:52:18.654 +03:00  INF]  Hosting environment: Development
+[2022-06-02 21:52:18.654 +03:00  INF]  Content root path: C:\Users\WIN10\source\repos\boot-camp2\boot-camp2\
+[2022-06-02 21:52:19.273 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7099/swagger/index.html - -
+[2022-06-02 21:52:19.539 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - -
+[2022-06-02 21:52:19.539 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7099/_vs/browserLink - -
+[2022-06-02 21:52:19.540 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7099/swagger/index.html - - - 200 - text/html;charset=utf-8 273.2190ms
+[2022-06-02 21:52:19.553 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 14.4663ms
+[2022-06-02 21:52:19.576 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7099/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.6329ms
+[2022-06-02 21:52:19.780 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7099/swagger/v1/swagger.json - -
+[2022-06-02 21:52:19.908 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7099/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.7476ms
+[2022-06-02 21:52:25.267 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7099/api/Location/all - -
+[2022-06-02 21:52:25.276 +03:00  INF]  Executing endpoint 'boot_camp2.Controllers.LocationController.Get (boot_camp2)'
+[2022-06-02 21:52:25.293 +03:00  INF]  Route matched with {action = "Get", controller = "Location"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Services.Location]] Get() on controller boot_camp2.Controllers.LocationController (boot_camp2).
+[2022-06-02 21:52:25.298 +03:00  INF]  Weather Forecast executing...
+[2022-06-02 21:52:25.321 +03:00  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Services.Location, Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-06-02 21:52:25.332 +03:00  INF]  Executed action boot_camp2.Controllers.LocationController.Get (boot_camp2) in 34.0224ms
+[2022-06-02 21:52:25.334 +03:00  INF]  Executed endpoint 'boot_camp2.Controllers.LocationController.Get (boot_camp2)'
+[2022-06-02 21:52:25.334 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7099/api/Location/all - - - 200 - application/json;+charset=utf-8 67.5084ms
+[2022-06-02 21:53:31.908 +03:00  INF]  User profile is available. Using 'C:\Users\WIN10\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-06-02 21:53:32.482 +03:00  INF]  Now listening on: https://localhost:7099
+[2022-06-02 21:53:32.482 +03:00  INF]  Now listening on: http://localhost:5099
+[2022-06-02 21:53:32.497 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-06-02 21:53:32.497 +03:00  INF]  Hosting environment: Development
+[2022-06-02 21:53:32.497 +03:00  INF]  Content root path: C:\Users\WIN10\source\repos\boot-camp2\boot-camp2\
+[2022-06-02 21:53:33.085 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7099/swagger/index.html - -
+[2022-06-02 21:53:33.371 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7099/_vs/browserLink - -
+[2022-06-02 21:53:33.371 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - -
+[2022-06-02 21:53:33.373 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7099/swagger/index.html - - - 200 - text/html;charset=utf-8 287.6316ms
+[2022-06-02 21:53:33.393 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 21.3041ms
+[2022-06-02 21:53:33.404 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7099/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.5772ms
+[2022-06-02 21:53:33.511 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7099/swagger/v1/swagger.json - -
+[2022-06-02 21:53:33.628 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7099/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 117.3284ms
+[2022-06-02 21:53:51.901 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7099/api/Location/all - -
+[2022-06-02 21:53:51.912 +03:00  INF]  Executing endpoint 'boot_camp2.Controllers.LocationController.Get (boot_camp2)'
+[2022-06-02 21:53:51.931 +03:00  INF]  Route matched with {action = "Get", controller = "Location"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Services.Location]] Get() on controller boot_camp2.Controllers.LocationController (boot_camp2).
+[2022-06-02 21:53:57.956 +03:00  INF]  Weather Forecast executing...
+[2022-06-02 21:54:04.456 +03:00  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Services.Location, Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-06-02 21:54:04.468 +03:00  INF]  Executed action boot_camp2.Controllers.LocationController.Get (boot_camp2) in 12530.892ms
+[2022-06-02 21:54:04.469 +03:00  INF]  Executed endpoint 'boot_camp2.Controllers.LocationController.Get (boot_camp2)'
+[2022-06-02 21:54:04.469 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7099/api/Location/all - - - 200 - application/json;+charset=utf-8 12568.3889ms
+[2022-06-02 21:55:03.627 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7099/api/Location/all - -
+[2022-06-02 21:55:03.634 +03:00  INF]  Executing endpoint 'boot_camp2.Controllers.LocationController.Get (boot_camp2)'
+[2022-06-02 21:55:03.641 +03:00  INF]  Route matched with {action = "Get", controller = "Location"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Services.Location]] Get() on controller boot_camp2.Controllers.LocationController (boot_camp2).
+[2022-06-02 21:55:07.593 +03:00  INF]  Weather Forecast executing...
+[2022-06-02 21:55:11.981 +03:00  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Services.Location, Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-06-02 21:55:11.982 +03:00  INF]  Executed action boot_camp2.Controllers.LocationController.Get (boot_camp2) in 8340.8854ms
+[2022-06-02 21:55:11.982 +03:00  INF]  Executed endpoint 'boot_camp2.Controllers.LocationController.Get (boot_camp2)'
+[2022-06-02 21:55:11.983 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7099/api/Location/all - - - 200 - application/json;+charset=utf-8 8356.0047ms

@@ -9,11 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 //  .Enrich.FromLogContext()
 //  .CreateLogger();
 
-builder.Host.UseSerilog((hostContext, services, configuration) => {
-configuration.WriteTo.File("C:\\Users\\WIN10\\source\\repos\\r.txt");
-});
+//builder.Host.UseSerilog((hostContext, services, configuration) => {
+//configuration.WriteTo.File("C:\\Users\\WIN10\\source\\repos\\o.txt");
+//});
 //builder.Logging.ClearProviders();
 //builder.Logging.AddSerilog(logger);
+var logger = new LoggerConfiguration()
+  .ReadFrom.Configuration(builder.Configuration)
+  .Enrich.FromLogContext()
+  .CreateLogger();
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<ILocationService, LocationService>();
 builder.Services.AddScoped<ILocationData, LocationData>();

@@ -22,14 +22,9 @@ namespace boot_camp2.Controllers
         [HttpGet("all")]    
         public async Task<List<Location>> Get()
         {
-            try
-            {
-                throw new Exception("error");
-            }
-            catch(Exception ex)
-            {
-                _logger.LogInformation(ex.StackTrace);
-            }
+            
+                _logger.LogInformation("Weather Forecast executing...");
+            
             return await _locationService.getLocations();
         }
 
@@ -37,7 +32,7 @@ namespace boot_camp2.Controllers
         [HttpGet ("city")]
         public async Task<List<Location>> GetByCity([FromQuery] string city)
         {
-            
+            throw new Exception("mmmmmmmmmmmmmmmmmmmmmmmmmmmeeeeeeee");
             return await _locationService.getLocationByCity(city);
         }
         // GET api/<PatientController>/5

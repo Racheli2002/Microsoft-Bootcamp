@@ -22,7 +22,7 @@ namespace boot_camp2
             }
             catch (Exception ex)
             {
-                _logger.LogInformation(ex.StackTrace);
+                _logger.LogInformation(ex.Message);
             }
         }
     }
