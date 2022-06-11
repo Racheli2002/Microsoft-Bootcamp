@@ -419,3 +419,5 @@ C:\Users\WIN10\source\repos\boot-camp2\Tests\bin\Debug\net6.0\Serilog.Sinks.Debu
 C:\Users\WIN10\source\repos\boot-camp2\Tests\bin\Debug\net6.0\Serilog.Sinks.File.dll
 C:\Users\WIN10\source\repos\boot-camp2\Tests\bin\Debug\net6.0\boot_camp2.dll
 C:\Users\WIN10\source\repos\boot-camp2\Tests\bin\Debug\net6.0\boot_camp2.pdb
+C:\Users\WIN10\source\repos\boot-camp2\Tests\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\WIN10\source\repos\boot-camp2\Tests\bin\Debug\net6.0\Moq.dll

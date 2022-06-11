@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace boot_camp2
@@ -14,7 +15,9 @@ namespace boot_camp2
         }
 
         public async Task Invoke(HttpContext httpContext,ILogger<Program> _logger)
+
         {
+           
             try
             {
                 await _next(httpContext);
@@ -23,6 +26,8 @@ namespace boot_camp2
             catch (Exception ex)
             {
                 _logger.LogInformation(ex.Message);
+                httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+
             }
         }
     }

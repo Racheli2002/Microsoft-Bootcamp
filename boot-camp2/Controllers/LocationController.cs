@@ -13,7 +13,7 @@ namespace boot_camp2.Controllers
         private readonly ILogger<LocationController> _logger;
 
         ILocationService _locationService;
-        public LocationController(ILocationService locationService, ILogger<LocationController> logger)
+        public LocationController(ILocationService locationService, ILogger<LocationController> logger=null)
         {
             _locationService = locationService;
             _logger = logger;
@@ -39,6 +39,9 @@ namespace boot_camp2.Controllers
         [HttpGet("patientid/{patientid}")]
         public async Task<List<Location>> Get(string patientid)
         {
+            throw new Exception("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+           
+
             return await _locationService.getLocationsBYPatientaId(patientid);
         }
 
